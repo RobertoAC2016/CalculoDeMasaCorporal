@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculoMasaCorporal.InfoPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Calculo de masa corporal!" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+        <StackLayout x:Name="pnlPorGenero">            
+            <Button Text="a) Hombre" Margin="30,10,30,10" x:Name="hombre" Clicked="hombre_Clicked"></Button>
+            <Button Text="b) Mujer" Margin="30,10,30,10" x:Name="mujer" Clicked="mujer_Clicked"></Button>
+        </StackLayout>
+        <StackLayout x:Name="pnlPorEdad">
+            <Entry x:Name="txtEdad" Margin="30,10,30,10" Placeholder="Edad" Keyboard="Numeric"></Entry>
+            <Button Text="Siguiente" Margin="30,10,30,10" x:Name="btnEdad" Clicked="btnEdad_Clicked"></Button>
+        </StackLayout>
+        <StackLayout x:Name="pnlPorComplexion">
+            <Button Text="Ectomorfo" Margin="30,10,30,10" x:Name="btnEctomorfo" Clicked="btnEctomorfo_Clicked"></Button>
+            <Button Text="Mesomorfo" Margin="30,10,30,10" x:Name="btnMesomorfo" Clicked="btnMesomorfo_Clicked"></Button>
+            <Button Text="Endomorfo" Margin="30,10,30,10" x:Name="btnEndomorfo" Clicked="btnEndomorfo_Clicked"></Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculoMasaCorporal.DescriptionPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Calculo de masa corporal!" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+        <Label Text="Descripcion" FontSize="Title" Padding="30,10,30,10"/>
+        <!--<Label x:Name="lblPorTipo" Text="" FontSize="Subtitle" Padding="30,10,30,10"/>-->
+        <Label x:Name="lblDetail" Text="" FontSize="Subtitle" Padding="30,10,30,10"/>
+        <StackLayout HorizontalOptions="FillAndExpand">
+            <FlexLayout HorizontalOptions="FillAndExpand">
+                <Label Text="Altura: " FontSize="Subtitle" Padding="10,10,10,10"/>
+                <Entry x:Name="txtAltura" Margin="10,0,10,10" HorizontalOptions="FillAndExpand" WidthRequest="150"
+                       Placeholder="Altura en metros" Keyboard="Numeric"
+                    ></Entry>
+            </FlexLayout>
+            <FlexLayout HorizontalOptions="FillAndExpand">
+                <Label Text="Peso: " FontSize="Subtitle" Padding="10,10,10,10"/>
+                <Entry x:Name="txtPeso" Margin="10,0,10,10" HorizontalOptions="FillAndExpand" WidthRequest="150"
+                       Placeholder="Peso en Kg" Keyboard="Numeric"
+                    ></Entry>
+            </FlexLayout>
+            <Button Text="Calcular" Margin="10,10,10,10" x:Name="btnCalcular" Clicked="btnCalcular_Clicked"></Button>
+            <Label x:Name="txtResultado" Text="" FontSize="Title" Padding="10,10,10,10"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

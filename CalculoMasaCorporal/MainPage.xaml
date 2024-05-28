@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculoMasaCorporal.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Calculo de masa corporal!" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+        <Label Text="Opciones:" FontSize="Title" Padding="30,10,30,10"/>
+        <Button Text="a) Por genero" Margin="30,10,30,10" x:Name="genero" Clicked="genero_Clicked"></Button>
+        <Button Text="b) Por edad" Margin="30,10,30,10" x:Name="edad" Clicked="edad_Clicked"></Button>
+        <Button Text="c) Por complexion" Margin="30,10,30,10" x:Name="complexion" Clicked="complexion_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
