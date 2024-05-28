@@ -32,7 +32,7 @@ namespace CalculoMasaCorporal
         }
         private void btnCalcular_Clicked(object sender, EventArgs e)
         {
-            txtResultado.Text = $"Tu IMC: {float.Parse(txtPeso.Text) / (float.Parse(txtAltura.Text) * float.Parse(txtAltura.Text))}";
+            txtResultado.Text = $"Tu IMC: {float.Parse(txtPeso.Text) / (float.Parse(txtAltura.Text) * float.Parse(txtAltura.Text))} Kg";
         }
     }
 }
